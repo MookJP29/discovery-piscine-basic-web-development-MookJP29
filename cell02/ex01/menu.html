@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เมนูรถไฟ SNCF</title>
+  <link rel="stylesheet" href="menu.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="menu-box">
+    <label for="train-select">เลือกขบวนรถไฟ</label>
+    <select id="train-select">
+      <option selected disabled>-- กรุณาเลือก --</option>
+      <option value="paris">รถไฟปารีส → ลียง</option>
+      <option value="lyon">รถไฟลียง → ปารีส</option>
+    </select>
+    <div class="info info-paris">
+      <strong>รถไฟปารีส → ลียง</strong><br>
+      ความเร็ว: 216 กม./ชม.<br>
+      ออกเดินทาง: 12 กันยายน 1985<br>
+      อุณหภูมิภายนอก: 13°C, ภายใน: 22°C<br>
+      สภาพอากาศ: เมฆมาก, ลม S/SE<br>
+    </div>
+    <div class="info info-lyon">
+      <strong>รถไฟลียง → ปารีส</strong><br>
+      ความเร็ว: 224 กม./ชม.<br>
+      ออกเดินทาง: 12 กันยายน 1985 เวลา 23:00<br>
+      สภาพอากาศ: เมฆมาก, ลม S/SE<br>
+    </div>
+  </div>
+  <script>
+    const select = document.getElementById('train-select');
+    const infoParis = document.querySelector('.info-paris');
+    const infoLyon = document.querySelector('.info-lyon');
+    select.addEventListener('change', function() {
+      infoParis.style.display = select.value === 'paris' ? 'block' : 'none';
+      infoLyon.style.display = select.value === 'lyon' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
