@@ -1,0 +1,82 @@
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.profile-card {
+  background: #fff;
+  border-radius: 0px;
+  box-shadow: 0 4px 24px rgba(80,40,0,0.10);
+  padding: 32px 36px 28px 36px;
+  min-width: 320px;
+  max-width: 340px;
+  border: 2px solid #e0cda9;
+  text-align: center;
+}
+.card-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5em;
+  color: #3a3a3a;
+  letter-spacing: 1px;
+}
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.profile-table td {
+  border: none;
+  padding: 6px 0;
+}
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e0cda9;
+  margin-bottom: 8px;
+}
+.login {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #5e81ac;
+}
+.desc {
+  color: #888;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+.social-icons {
+  margin: 10px 0 18px 0;
+}
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  margin: 0 6px;
+  vertical-align: middle;
+  filter: grayscale(1);
+  transition: filter 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.social-icons img:hover {
+  filter: none;
+  transform: scale(1.15);
+}
+.contact-btn {
+  background: #5e81ac;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  padding: 10px 32px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.contact-btn:hover {
+    background: #4a6a8c;
+    }
