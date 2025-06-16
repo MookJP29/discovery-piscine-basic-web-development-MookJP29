@@ -1,0 +1,51 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax-1 {
+  background-image: url('https://pixflow.net/blog/wp-content/uploads/2024/01/Disneys-Downfall-Navigating-the-Challenges-and-Changes-in-2023.webp');
+}
+
+.parallax-2 {
+  background-image: url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/952/536/75/vision-dam/digital/parks-services/services-standard-assets/wdtc/walt-disney-world/planning/discover/eu/disney-cinderella-castle-fireworks-16x9.jpg?2023-03-06T10:13:34+00:00');
+}
+
+.center-message {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 40px 60px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.black-block {
+  background: #111;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-message {
+  color: #fff;
+  text-align: center;
+  padding: 30px 40px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
