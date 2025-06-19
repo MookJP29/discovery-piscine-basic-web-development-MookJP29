@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Background Color</title>
+  <link rel="stylesheet" href="backgroound.css">
+  <style>
+        body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      transition: background 0.4s;
+    }
+    button {
+      padding: 16px 36px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      border: none;
+      background: #5e81ac;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #3b5c7a;
+    }
+  </style>
+</head>
+<body>
+  <button>Change Background Color</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    function changeBg() {
+      const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+      document.body.style.background = randomColor;
+    }
+  </script>
+</body>
+</html>
